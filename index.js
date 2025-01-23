@@ -19,29 +19,6 @@ window.onresize = function(e)
     redraw();
 }
 
-document.body.ontouchmove = function(e)
-{
-    if(isMobile())
-    {
-        console.log("we are on mobile")
-        rescale(e.touches[0].clientX);
-
-    }
-}
-
-document.body.ontouchstart = function(e)
-{
-    if(isMobile())
-    {
-        console.log("we are on mobile")
-        rescale(e.touches[0].clientX);
-
-    }
-}
-
-
-document.onmousemove = (e) => { rescale(e.clientX) };
-
 function rescale(real_mouse_x)
 {
     var mousePrecent = real_mouse_x / window.innerWidth;
@@ -60,8 +37,6 @@ function rescale(real_mouse_x)
             goal = mouse_x - 1;
         }
     }
-
-    console.log(goal + ", " + selected)
     redraw();
 }
 
@@ -86,11 +61,24 @@ function redraw() {
 function update()
 {
     selected = goal;
+    rescale(mouseX);
 }
 
-function lerp(a, b, t)
-{
-    return a + (b - a) * t;
-}
+setInterval(update, 1000 / 5);
 
-setInterval(update, 1000 * 0.2);
+
+/// Mouse Location
+let mouseX = 0;
+let mouseY = 0;
+
+window.addEventListener('touchmove', (event) => {
+    if (event.touches.length > 0) {
+        mouseX = event.touches[0].clientX;
+        mouseY = event.touches[0].clientY;
+    }
+});
+
+window.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+});
