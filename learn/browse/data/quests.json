@@ -4,26 +4,25 @@
 			"name": "Programming Basics",
 			"lessons": [
 				{
-					"id": "basics>test",
-					"name": "Example Title"
+					"id": "basics>getting_started",
+					"name": "Getting Started"
 				},
 				{
-					"id": "basics>test2",
-					"name": "Another Title"
+					"id": "basics>navigating",
+					"name": "Navigating in P5JS"
 				}
 			]
 		},
 		{
-			"name": "Programming Basics",
+			"name": "Game Development",
 			"lessons": [
-				{
-					"id": "basics>test3",
-					"name": "Example Title"
-				},
-				{
-					"id": "basics>test4",
-					"name": "Another Title"
-				}
+				
+			]
+		},
+		{
+			"name": "Web Development",
+			"lessons": [
+			
 			]
 		}
 	]

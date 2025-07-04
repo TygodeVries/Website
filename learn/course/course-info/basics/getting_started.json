@@ -1,0 +1,52 @@
+{
+    "title": "Getting Started",
+    "description": "Lets get started!",
+    "next": "basics>navigating",
+    "sections": [
+        {
+            "type": "warning",
+            "content": "We have to cover some less interesting things before stuff gets good. Hang in there! \nYou can do this!"
+        },
+        {
+            "type": "text",
+            "content": "The first question we should ask ourself, what is programming?\nProgramming is the act of writing instructions for the computer.\nThere are a lot of different ways to write those instructions, we call those ways 'Programming Languages'\nSome examples are, 'JavaScript', 'C++', 'C#' and Rust.\nBut there are tons more."
+        },
+        {
+            "type": "text",
+            "content": "In the 'Getting Started' course we will be using JavaScript in combination with P5JS.\nP5JS provided extra tools to make it easier for us to program."
+        },
+        {
+            "type": "text",
+            "content": "You can access P5JS directly in the browser, you do not have to install anything.\nIt is very much recommended to make an account, in order to save more easily."
+        },
+        {
+            "type": "text",
+            "content": "This website uses 'missions'. These are tasks and challenges you are expected todo, You can find one below. \nIf you need help with these missions then there is a button available in the top left of your screen labeled 'Help!' "
+        },
+        {
+            "type": "mission",
+            "content": "Create an account at <a href=\"https://editor.p5js.org/\" class=\"link\" target=\"_blank\">p5js.org</a> using the sign-up button in the top right"
+        },
+        {
+            "type": "text",
+            "content": "If you don't want your eyes to burn while coding late at night, it is recommended to turn the site into dark mode. \nThis also makes you look cooler if someone looks over your shoulder."
+        },
+        {
+            "type": "mission",
+            "content": "Change the Theme of the P5JS website to your liking.\nYou can do this by pressing the gear in the top right, then setting the 'Theme' to whatever you want."
+        },
+        {
+            "type": "text",
+            "content": "Tip: You can click an image to zoom in."
+        },
+        {
+            "type": "image",
+            "content": "./media/basics/getting_started/editor_theme.png",
+            "context": "This images shows you where the theme select is located."
+        },
+        {
+            "type": "text",
+            "content": "Awesome! Now we are ready to start coding! \nPress continue at the end of a course to go to the next one automatically."
+        }
+    ]
+}

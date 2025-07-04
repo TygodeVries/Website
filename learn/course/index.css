@@ -41,6 +41,81 @@
     padding-left: 1rem;
 }
 
+.content-mission {
+    font-size: 1.2rem;
+    background-color: #4d104a;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+
+    margin-top: 0rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.content-warning {
+    font-size: 1.2rem;
+    background-color: #c1b661;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: rgb(0, 0, 0);
+
+    margin-top: 0rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+
+
+a:visited {
+    color: white; /* visited link color */
+  }
+
+  a:hover {
+    color: gray; /* on mouse hover */
+  }
+
+  a:active {
+    color: white; /* while clicking */
+  }
+
+a {
+    color: white
+}
+
+.mission-header {
+    font-size: 1.5rem;
+    background-color: #631b60;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+
+    margin-bottom: 0rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.warning-header {
+    font-size: 1.5rem;
+    background-color: #f7fe73;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: black;
+
+    margin-bottom: 0rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+
 .content-invalid {
     background-color: lightcoral;
     color: darkred

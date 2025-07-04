@@ -1,0 +1,79 @@
+{
+    "title": "Navigating P5JS",
+    "description": "So, what are we even looking at?",
+    "next": "test2",
+    "sections": [
+        {
+            "type": "text",
+            "content": "P5JS is a library (See it as DLC) for the programming language JavaScript (Not to confuse with Java)\nWe are using it to more quickly put stuff together."
+        },
+        {
+            "type": "text",
+            "content": "At this point you should be in the P5JS editor, the editor has 3 segments (I gave them color, you will not see these):\n Green - 'Preview' This is where you can see the result of your program. \n Red - 'Sketch' this is where you will type your code\n Blue - 'Console' this is useful for when we have problems in our code, and we will get back to it in a bit."
+        },
+        {
+            "type": "image",
+            "content": "./media/basics/navigating/editor_parts.png",
+            "context": "(Red) Sketch (Green) Preview (Blue) Console"
+        },
+        {
+            "type": "text",
+            "content": "Currently your code (from the default template) should look like the following:"
+        },
+        {
+            "type": "code",
+            "lang": "language-js",
+            "content": "function setup() {\r\n  createCanvas(400, 400);\r\n}\r\n\r\nfunction draw() {\r\n  background(220);\r\n}"
+        },
+        {
+            "type": "text",
+            "content": "What you see here are 2 functions. One function name is called 'setup' and one is called 'draw'.\nAny code we put between the curly brackets { } are part of this function."
+        },
+        {
+            "type": "text",
+            "content": "For the functions 'setup' P5JS will 'execute' (a.k.a 'call' or 'run') any code we put in between the { } as soon as we press the 'play' button."
+        },
+        {
+            "type": "text",
+            "content": "The function 'draw' will be executed on loop, every single frame, so any code we put between those { } will be called constantly."
+        },
+        {
+            "type": "text",
+            "content": "We also have the power to execute functions! In the current code, we are already doing so!\nIn the setup, we execute \"createCanvas(400, 400)\" and in the draw we execute\"background(220)\""
+        },
+        {
+            "type": "text",
+            "content": "Shall try something new?\nLets write some text to the console.\nWe can do that by executing 'console.log()' In between the smooth brackets ( ) we can put <b>arguments</b>.\nArguments are more information that we can provide when executing the function."
+        },
+        {
+            "type": "text",
+            "content": "In this case we provide text as argument. You can put text between quotes (\"text\")"
+        },
+        {
+            "type": "code",
+            "lang": "language-js",
+            "content": "console.log(\"Hello, World\")"
+        },
+        {
+            "type": "text",
+            "content": "We can add this instruction (a.k.a 'line' or 'command') in our setup function."   
+        },
+        {
+            "type": "mission",
+            "content": "Add the instruction to write a message to the console after the instruction 'createCanvas(400, 400)', but still in the { } of the setup function.\nThen, test your code by pressing the 'play' button"   
+        },
+        {
+            "type": "text",
+            "content": "Did it work? Do you see a message in the <b>console</b>?\nIf so, you can press continue! otherwise, check if your code matches what is expected.\nThe code that you are expected to have is as follows:"   
+        },
+        {
+            "type": "code",
+            "lang": "language-js",
+            "content": "function setup() {\r\n  createCanvas(400, 400);\r\n  console.log(\"Hello, World\")\r\n}\r\n\r\nfunction draw() {\r\n  background(220);\r\n}"
+        },
+        {
+            "type": "text",
+            "content": "Need more help? Press the 'Help!' button in the top left. (You can pick between human or AI help.)"
+        }
+    ]
+}
