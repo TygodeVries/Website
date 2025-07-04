@@ -1,0 +1,11 @@
+{
+    "title": "Other Course",
+    "description": "More stuffs",
+    "next": "test2",
+    "sections": [
+        {
+            "type": "text",
+            "content": "Hello Text\nThis is just a example text\nblah blah blah\nMore here!"
+        }
+    ]
+}

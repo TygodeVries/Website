@@ -1,0 +1,59 @@
+.html, body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    background-color: #181818;
+}
+
+.start {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.quest
+{
+    border: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.quest-link {
+    border-bottom: 10rem;
+    position: relative; 
+}
+
+a:visited {
+    color: white; /* visited link color */
+  }
+
+  a:hover {
+    color: white; /* on mouse hover */
+  }
+
+  a:active {
+    color: white; /* while clicking */
+  }
+
+a {
+    color: white
+}
+
+.quests {
+    display: flex;
+}
+
+.course-checkbox:checked {
+  accent-color: green; /* Modern browsers only */
+}
+
+.disclaimer {
+    color:yellow;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+{
+	"quests": [
+		{
+			"name": "Programming Basics",
+			"lessons": [
+				{
+					"id": "basics>test",
+					"name": "Example Title"
+				},
+				{
+					"id": "basics>test2",
+					"name": "Another Title"
+				}
+			]
+		},
+		{
+			"name": "Programming Basics",
+			"lessons": [
+				{
+					"id": "basics>test3",
+					"name": "Example Title"
+				},
+				{
+					"id": "basics>test4",
+					"name": "Another Title"
+				}
+			]
+		}
+	]
+}

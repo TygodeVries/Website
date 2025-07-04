@@ -1,0 +1,39 @@
+{
+    "title": "Test Course",
+    "description": "This is a course to test the course software",
+    "next": "test2",
+    "sections": [
+        {
+            "type": "text",
+            "content": "Je moet dit doen!"
+        },
+        {
+            "type": "text",
+            "content": "More Text!"
+        },
+        {
+            "type": "code",
+            "lang": "language-csharp",
+            "content": "public class Program\n{\n\tpublic static void Main(string[] args) {\n\t\tConsole.WriteLine(\"Hello, World!\");\n\t}\n}"
+        },
+        {
+            "type": "image",
+            "content": "https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065",
+            "context": "A cat, as seen on TV!"
+        },
+        {
+            "type": "image",
+            "content": "https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551064",
+            "context": "A cat, as seen on TV!"
+        },
+        {
+            "type": "code",
+            "lang": "language-csharp",
+            "content": "public class Program\n{\n\tpublic static void Main(string[] args) {\n\t\tConsole.WriteLine(\"Hello, World!\");\n\t}\n}"
+        },
+        {
+            "type": "text",
+            "content": "More Text!"
+        }
+    ]
+}

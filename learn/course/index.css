@@ -1,0 +1,153 @@
+.html, body  {
+    background-color: #181818;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.title
+{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: wheat;
+
+    text-align: center;
+    font-size: 5rem;
+}
+
+.description
+{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content-text {
+    font-size: 1.2rem;
+    background-color: #1f1f1f;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.content-invalid {
+    background-color: lightcoral;
+    color: darkred
+}
+
+pre[class*="language-"] {
+    background-color: #1f1f1f !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+
+.copy-button {
+    position: absolute;        /* or 'absolute' if you want it relative to a container */
+    right: 2rem;            /* distance from the right edge */
+    
+    background-color: #6a9955;
+    border: none;
+    color: white;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.image-box {
+    height: 20rem;
+    width: 20rem; /* Make it a square box */
+    
+    padding: 1rem;
+    padding-bottom: 3.5rem;
+    margin: 2rem;
+
+    border: none;
+    background-color: #1f1f1f;
+    
+    display: block;
+    width: fit-content;
+
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.zoom {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.next-button {
+    left: 2rem;            /* distance from the right edge */
+    
+    background-color: #6a9955;
+    border: none;
+    color: white;
+    padding: 1rem 6rem;
+    font-size: 0.9rem;
+
+    margin-left: 1rem;
+    margin-bottom: 7rem;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.exit-button {
+    left: 2rem;            /* distance from the right edge */
+    
+    background-color: rgb(194, 52, 52);
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 0.9rem;
+
+    margin-left: 2rem;
+    margin-bottom: 7rem;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.help-button {
+    left: 2rem;            /* distance from the right edge */
+    
+    position: sticky;
+    top: 1rem;
+
+    background-color: rgb(52, 135, 194);
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 0.9rem;
+
+    margin-left: 1rem;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
