@@ -75,7 +75,7 @@ function load() {
         if(document.getElementById("lighting").checked)
         {
             const lightCheckbox = document.createElement("select");
-            lightCheckbox.options.add(new Option("Don't Change", "keep"));
+            lightCheckbox.options.add(new Option("-", "keep"));
             lightCheckbox.options.add(new Option("Regular", "regular"));
             lightCheckbox.options.add(new Option("Dark", "dark"));
             lightCheckbox.options.add(new Option("Bright", "bright"));
@@ -169,3 +169,16 @@ function highlightProgress() {
         sliderBar.style.transform = `translateY(${topOffset}px)`;
     }, 100);
 }
+
+document.addEventListener("keydown", function (event) {
+    if ((event.key === "ArrowLeft" || event.key === "ArrowUp") && audio) {
+        audio.currentTime = Math.max(0, audio.currentTime - 1);
+    }
+});
+
+
+document.addEventListener("keydown", function (event) {
+    if ((event.key === "ArrowRight" || event.key === "ArrowDown") && audio) {
+        audio.currentTime = Math.max(0, audio.currentTime + 1);
+    }
+});

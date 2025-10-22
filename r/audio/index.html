@@ -13,13 +13,16 @@
     <div class="bpm">
         <input class="help-button" type="number" placeholder="Enter BPM">
         <br>
-        <input type="checkbox" id="lighting">Enable Lighting Controls</input>
+        <input type="checkbox" id="lighting" class="content-text">Enable Lighting Controls</input>
     </div>
 
     <br>
     <button class="exit-button" onclick="load()">Create</button>
 
     <h1 class="content-text">Editor</h1>
+    <div id="control" class="content-text">
+        Use the arrows to navigate the timeline, click on boxes to add/remove notes.
+    </div>
     <div id="editor-section">
         <button id="play-button" class="help-button">Play</button>
         <button id="stop-button" class="help-button">Pause</button>
