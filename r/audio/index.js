@@ -24,9 +24,21 @@ document.getElementById("play-button").addEventListener("click", function () {
         return;
     }
 
+    clearInterval(intervalId);
     audio.currentTime = 0;
     audio.play();
     highlightProgress();
+});
+
+document.getElementById("stop-button").addEventListener("click", function () {
+    
+    if(audio.paused)
+    {
+        audio.play();
+    }
+    else {
+        audio.pause();
+    }
 });
 
 function load() {
@@ -118,7 +130,7 @@ function highlightProgress() {
     progressSlider.appendChild(sliderBar);
 
     intervalId = setInterval(() => {
-        if (!audio || audio.paused) {
+        if (!audio) {
             clearInterval(intervalId);
             return;
         }
