@@ -72,6 +72,17 @@ function load() {
             row.appendChild(checkbox);
         }
 
+        if(document.getElementById("lighting").checked)
+        {
+            const lightCheckbox = document.createElement("select");
+            lightCheckbox.options.add(new Option("Don't Change", "keep"));
+            lightCheckbox.options.add(new Option("Regular", "regular"));
+            lightCheckbox.options.add(new Option("Dark", "dark"));
+            lightCheckbox.options.add(new Option("Bright", "bright"));
+            lightCheckbox.options.add(new Option("Spot", "spot"));
+            row.appendChild(lightCheckbox);
+        }
+
         editor.appendChild(row);
     }
 }
@@ -81,6 +92,7 @@ function exportFile() {
 
     var output = "";
     var checkboxes = document.querySelectorAll("input[type='checkbox']");
+    var lightingOptions = document.querySelectorAll("select");
     checkboxes.forEach(element => {
         if(element.checked) {
             output += "X"
@@ -90,6 +102,12 @@ function exportFile() {
         }
 
         if ((Array.from(checkboxes).indexOf(element) + 1) % 4 === 0) {
+            if(document.getElementById("lighting").checked)
+            {
+                lightingOptions[Math.floor(Array.from(checkboxes).indexOf(element) / 4)].value;
+                output += " " + lightingOptions[Math.floor(Array.from(checkboxes).indexOf(element) / 4)].value;
+            }
+            
             output += "\n";
         }
     });
