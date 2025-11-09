@@ -91,7 +91,7 @@ function exportFile() {
 
 
     var output = "";
-    var checkboxes = document.querySelectorAll("input[type='checkbox']");
+    var checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']")).slice(1);
     var lightingOptions = document.querySelectorAll("select");
     checkboxes.forEach(element => {
         if(element.checked) {
