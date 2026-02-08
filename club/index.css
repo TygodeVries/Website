@@ -1,0 +1,40 @@
+.game {
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url('Logo.png');
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    position: relative;
+    top: 5%;
+    left: 3%;
+    font-size: 10vh;
+    font-weight: 600;
+
+    color: #ffffff;
+
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.download {
+    position: relative;
+    top: 10%;
+    left: 3%;
+    width: 20vh;
+    height: 5vh;
+
+    border: none;
+    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.5);
+}
