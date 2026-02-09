@@ -7,3 +7,7 @@ function download(name)
     element.click();
     document.body.removeChild(element);
 }
+
+function redirect(url) {
+    window.open(url, '_blank');
+}
