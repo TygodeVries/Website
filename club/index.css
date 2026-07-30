@@ -1,61 +1,159 @@
-.game {
-    margin: 0;
-    border: 0;
-    width: 100%;
-    height: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-image: url('Logo.png');
-    background-size: cover;
-}
-
 body {
     margin: 0;
     border: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0d12;
 }
 
-.title {
-    position: relative;
-    top: 5%;
-    left: 3%;
-    font-size: 10vh;
-    font-weight: 600;
+.header {
+    width: 100%;
+    height: 10%;
+}
 
+.content {
+    width: 100%;
+    height: 90%;
+    margin: 1em;
+}
+
+.year-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+
+.year-title {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px 0;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.sessions-container {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px; 
+    padding-bottom: 20px; 
+    
+    padding-top: 10px; 
+    box-sizing: border-box; 
+    overflow: visible;
+}
+
+.session {
+    width: 45vh;
+    height: 100%; 
+    flex-shrink: 0; 
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "overlay";
+    border-radius: 8px;
+    perspective: 1000px;
+    transition: 1s;
+}
+
+.session:hover {
+    width: 50vh;
+    transform: rotate(3deg);
+    scale: 1.1;
+    z-index: 100;
+}
+
+.session-img,
+.session-content {
+    grid-area: overlay;
+}
+
+.session-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1) translate(var(--x, 0px), var(--y, 0px));
+    transition: transform 0.1s ease;
+    pointer-events: none;
+}
+
+.session-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.85) 0%, 
+        rgba(0, 0, 0, 0.3) 60%, 
+        transparent 100%
+    );
     color: #ffffff;
-
-    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.download {
-    position: relative;
-    top: 10%;
-    left: 3%;
-    width: 20vh;
-    height: 5vh;
+.session-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: auto;
+}
 
+.session-discr {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.session-info {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    align-self: flex-start;
     border: none;
-    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
 }
 
-.turtle:hover    {
-    color: green;
-     animation: shake 0.5s;
 
-  animation-iteration-count: infinite;
+.today {
+    border: 7px solid #10b981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+.today::before {
+    content: "TODAY";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 2;
+    background: #10b981;
+    color: #ffffff;
+    font-size: 0.7em;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
 }
+
+.sessions-container::-webkit-scrollbar {
+    height: 6px;
+}
+.sessions-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+.sessions-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.sessions-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+

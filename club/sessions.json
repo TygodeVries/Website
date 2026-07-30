@@ -1,0 +1,59 @@
+{
+    "years": [
+        {
+            "title": "2026 - 2027",
+            "sessions": [
+                {
+                    "title": "Ooh Eeh Ooh Ah Aah Ting Tang Walla Walla Bing",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session! This is a test session! This is a test session! This is a test session!",
+                    "today": true
+                },
+                {
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },{
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },{
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },{
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                }
+            ]
+        },
+        {
+            "title": "2025 - 2026",
+            "sessions": [
+                {
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },
+                {
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },{
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },{
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                },{
+                    "title": "Test",
+                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+                    "about": "This is a test session!"
+                }
+            ]
+        }
+    ]
+}
