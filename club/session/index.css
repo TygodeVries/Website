@@ -1,0 +1,85 @@
+body {
+    background-color: #092328;
+    font-family: 'Inter', sans-serif;
+}
+
+.session-page {
+    height: 80vh;
+    width: 80vw;
+    background-color: #12544F;
+    border-radius: 50px;
+    margin: 10vh auto 0;
+    padding: 2vh 3vw;
+    box-sizing: border-box;
+    filter: drop-shadow(20px 20px 10px #06171a);
+}
+
+.back-button {
+    background-color: #2A835F;
+    border: none;
+    color: white;
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 1vh 0 4vh 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.back-button:hover {
+    transform: rotate(5deg) scale(1.3);
+    filter: brightness(1.1);
+}
+
+.session-card {
+    padding: 0 2vw;
+}
+
+.session-header {
+    margin-bottom: 2vh;
+}
+
+.title {
+    font-size: 4em;
+    margin: 0;
+    color: white;
+    line-height: 1.1;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: #2A835F;
+    margin: 2vh 0 3vh;
+}
+
+.session-description {
+    color: white;
+    font-size: 1.4em;
+    width: 60%;
+    margin: 0 0 4vh;
+    line-height: 1.5;
+}
+
+.downloads {
+    margin: 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+.downloads h2 {
+    margin: 0 0 2vh;
+}
+
+.download-button {
+    color: #8BBB92;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.download-button:hover {
+    transform: rotate(5deg) scale(1.3);
+    filter: brightness(1.1);
+}

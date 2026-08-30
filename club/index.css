@@ -1,19 +1,111 @@
 body {
     margin: 0;
     border: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0b0d12;
+    overflow-x: hidden;
+    background-color: #092328;
 }
 
 .header {
     width: 100%;
-    height: 10%;
+    height: 60px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+    font-weight: 1000;
+    background-color: #12544F;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.header-button {
+
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+
+    padding: 6px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.discord {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-button:hover { 
+    background-color: #5865f2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+}
+
+.disclaimer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: small;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 9999;
+    text-shadow: 4 2px 6px rgba(0, 0, 0, 0.7);
+}
+.divider {
+    height: 4px;
+    width: 100%;
+    background-color: #12544F;
+    
+}
+
+.tooltip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+
+    width: 250px;
+    padding: 10px 12px;
+
+    color: white;
+    background: rgba(20, 25, 45, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: 0.2s ease;
+}
+
+.disclaimer:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .content {
     width: 100%;
-    height: 90%;
-    margin: 1em;
+    height: 95%;
+    margin: 1.2em;
 }
 
 .year-container {
@@ -21,17 +113,36 @@ body {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    padding-top: 3em;
+
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .year-title {
     font-size: 2.5em;
     margin: 0;
     padding: 10px 0;
-    font-family: "Zen Dots", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 700;
     color: white;
+
+    padding-left: 5vh;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .sessions-container {
@@ -39,26 +150,39 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 15px; 
-    padding-bottom: 20px; 
-    
+    gap: 0px; 
+    padding-bottom: 30px;
     padding-top: 10px; 
+
     box-sizing: border-box; 
     overflow: visible;
+    overflow-x: scroll;
+
+    border: 0;
+    padding-left: 0;
 }
 
 .session {
     width: 45vh;
-    height: 100%; 
+    height: 80%; 
+    align-self: center;
     flex-shrink: 0; 
     overflow: hidden;
     display: grid;
     grid-template-areas: "overlay";
     border-radius: 8px;
     perspective: 1000px;
-    transition: 1s;
+    transition: 0.3s;
+    -webkit-user-drag: none;
+    user-select: none;
+    margin-left: 10px;
+}
+
+.sessions-container > *:first-child
+{
+    
+    margin-left: 5vh;
 }
 
 .session:hover {
@@ -79,7 +203,6 @@ body {
     object-fit: cover;
     transform: scale(1.1) translate(var(--x, 0px), var(--y, 0px));
     transition: transform 0.1s ease;
-    pointer-events: none;
 }
 
 .session-content {
@@ -92,10 +215,13 @@ body {
     background: linear-gradient(
         to top, 
         rgba(0, 0, 0, 0.85) 0%, 
-        rgba(0, 0, 0, 0.3) 60%, 
+        rgba(0, 0, 0, 0.3) 50%, 
         transparent 100%
     );
+
+    cursor: pointer;
     color: #ffffff;
+    
 }
 
 .session-title {
@@ -123,8 +249,8 @@ body {
 
 
 .today {
-    border: 7px solid #10b981;
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+    border: 7px solid #8BBB92;
+    box-shadow: 0 0 15px #12544F;
 }
 
 .today::before {
@@ -143,17 +269,16 @@ body {
 }
 
 .sessions-container::-webkit-scrollbar {
-    height: 6px;
-}
-.sessions-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-}
-.sessions-container::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-}
-.sessions-container::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.4);
+    display: none;
+    height: 0;
+     padding: 0;
+    margin: 0;
 }
 
+.sessions-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}

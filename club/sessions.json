@@ -2,34 +2,30 @@
     "years": [
         {
             "title": "2026 - 2027",
+            "id": "2",
             "sessions": [
                 {
-                    "title": "Ooh Eeh Ooh Ah Aah Ting Tang Walla Walla Bing",
+                    "id": "test",
+                    "title": "Voxel Terrain Generation",
                     "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
                     "about": "This is a test session! This is a test session! This is a test session! This is a test session!",
+                    "content": {
+                        "text": "This session is about testing this website. It will be replaced soon.\nThe other thing we are testing, is multiple lines.",
+                        "downloads": [
+                            {
+                                "name": "Test",
+                                "link": "https://www.google.com"
+                            }
+                        ]
+                    },
+
                     "today": true
-                },
-                {
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },{
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },{
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },{
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
                 }
             ]
         },
         {
             "title": "2025 - 2026",
+            "id": "1",
             "sessions": [
                 {
                     "title": "Test",

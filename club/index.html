@@ -1,17 +1,36 @@
 <head>
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/png" href="media/Logo.png" />
-    <script src="index.js"></script>
     <title>Let's Go Code!</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.1/lib/p5.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 
 <body> 
-    <div class="header"></div>
-
+    <div class="header">
+        <span class="header-title">New? Join the CT-Labs Discord:</span>
+        <button class="header-button" onclick="discord()">
+            <img src="media/Discord-Symbol-White.png" class="discord"></img>
+        </button>
+    </div>
     <div class="content" id="content">
     </div>
+    <div class="disclaimer">
+        This webpage is owned by the Programming Club.
+        
+       <div class="tooltip">
+    <p>
+        While the Programming Club is part of CT-Labs, this webpage is
+        independently managed and is not controlled by CT-Labs.
+    </p>
+    <p>
+        If you notice any issues with this webpage, please contact Tygo.
+    </p>
+</div>
+
+    
+    </div>
+    <script src="index.js"></script>
 </body>
