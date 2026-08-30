@@ -5,6 +5,7 @@
             "id": "2",
             "sessions": [
                 {
+                    "invisible": true,
                     "id": "test",
                     "title": "Voxel Terrain Generation",
                     "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
@@ -26,29 +27,9 @@
         {
             "title": "2025 - 2026",
             "id": "1",
+            "note": "I am updating old sessions so they can be done online...",
             "sessions": [
-                {
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },
-                {
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },{
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },{
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                },{
-                    "title": "Test",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session!"
-                }
+                
             ]
         }
     ]

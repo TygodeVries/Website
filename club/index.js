@@ -12,13 +12,23 @@ async function loadContent() {
     let html = '';
 
     for (const year of json.years) {
+
+        if(year.note == undefined)
+            year.note = "";
+
         html += `
             <div class="year-container">
                 <div class="divider"></div>
                 <div class="year-title">${year.title}</div>
+                <div class="note">${year.note}</div>
                 <div class="sessions-container">`;
 
         for (const session of year.sessions) {
+
+            if(session.invisible) 
+            {
+                continue;
+            }
 
             let todayClass = "";
 
@@ -138,4 +148,15 @@ function discord() {
         "https://discord.gg/S7ag7aC9Eu",
         "_blank"
     ).focus();
+}
+
+function closeWindow() {
+    document.getElementById('CTA').remove();
+}
+
+
+const aspectRatio = window.innerWidth / window.innerHeight;
+
+if (aspectRatio >= 1) {
+    closeWindow();
 }

@@ -7,6 +7,100 @@ body {
     background-color: #092328;
 }
 
+.CTA {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+
+  background-color: #092328;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 4vmin, 50px);
+}
+
+/* Discord button */
+.DiscordCTA {
+  width: clamp(120px, 25vmin, 220px);
+  height: clamp(120px, 25vmin, 220px);
+
+  flex-shrink: 0;
+
+  background-color: #5865f2;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 20px 30px 100px rgba(0, 0, 0, 0.4);
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Discord logo */
+.DiscordCTALogo {
+  width: 70%;
+  height: auto;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.CTAText {
+  color: white;
+  font-size: clamp(7rem, 6vmin, 15rem);
+  line-height: 1.1;
+  text-align: center;
+
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+}
+
+.note {
+    color: gray;
+    font-style: italic;
+    margin-left: 8vh;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  bottom: clamp(20px, 5vmin, 50px);
+
+  width: clamp(70px, 15vmin, 130px);
+  height: clamp(70px, 15vmin, 130px);
+
+  z-index: 10;
+  border: none;
+  border-radius: 50%;
+
+  font-size: clamp(2rem, 6vmin, 5rem);
+
+  background-color: lightcoral;
+  color: white;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .header {
     width: 100%;
     height: 60px;
