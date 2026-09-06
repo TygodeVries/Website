@@ -3,20 +3,22 @@
         {
             "title": "2026 - 2027",
             "id": "2",
-            "note": "This study year has not yet started...",
             "sessions": [
                 {
-                    "invisible": true,
                     "id": "test",
                     "title": "Voxel Terrain Generation",
-                    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
-                    "about": "This is a test session! This is a test session! This is a test session! This is a test session!",
+                    "img": "./media/voxelgame.png",
+                    "about": "How do games like Minecraft generate terrain?  We talk about it this session!",
                     "content": {
-                        "text": "This session is about testing this website. It will be replaced soon.\nThe other thing we are testing, is multiple lines.",
+                        "text": "How do games like Minecraft generate terrain? Using a pre-made voxel engine, we can experiment and learn about world generation.",
                         "downloads": [
                             {
-                                "name": "Test",
-                                "link": "https://www.google.com"
+                                "name": "Server",
+                                "link": "/club/download/year 2/terrain/server.zip"
+                            },
+                            {
+                                "name": "Client",
+                                "link": "/club/download/year 2/terrain/client.zip"
                             }
                         ]
                     },

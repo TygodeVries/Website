@@ -38,7 +38,7 @@ async function loadContent() {
     session.content.downloads.forEach(element => {
         downloadContent += `<a href="${element.link}" class="download-button">
                 <span>${element.name}</span>
-            </a>`;
+            </a><p>`;
     });
 
     document.getElementById('downloads').innerHTML += downloadContent;
