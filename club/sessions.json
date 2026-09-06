@@ -7,18 +7,18 @@
                 {
                     "id": "test",
                     "title": "Voxel Terrain Generation",
-                    "img": "./media/voxelgame.png",
+                    "img": "./media/VoxelGame.png",
                     "about": "How do games like Minecraft generate terrain?  We talk about it this session!",
                     "content": {
                         "text": "How do games like Minecraft generate terrain? Using a pre-made voxel engine, we can experiment and learn about world generation.",
                         "downloads": [
                             {
                                 "name": "Server",
-                                "link": "/club/download/year 2/terrain/server.zip"
+                                "link": "/club/download/year 2/terrain/Server.zip"
                             },
                             {
                                 "name": "Client",
-                                "link": "/club/download/year 2/terrain/client.zip"
+                                "link": "/club/download/year 2/terrain/Client.zip"
                             }
                         ]
                     },
