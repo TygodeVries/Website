@@ -13,6 +13,10 @@
                         "text": "How do games like Minecraft generate terrain? Using a pre-made voxel engine, we can experiment and learn about world generation.",
                         "downloads": [
                             {
+                                "name": "Visual Studio",
+                                "link": "https://visualstudio.microsoft.com/downloads/"
+                            },
+                            {
                                 "name": "Server",
                                 "link": "/club/download/year 2/terrain/Server.zip"
                             },
