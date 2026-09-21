@@ -5,7 +5,28 @@
             "id": "2",
             "sessions": [
                 {
-                    "id": "test",
+                    "id": "entity",
+                    "title": "Entities & Terrain",
+                    "img": "./media/Entity.png",
+                    "about": "Creating complex AI using a task system",
+                    "content": {
+                        "text": "What is the concept behind AI systems, how do other games do it?",
+                        "downloads": [
+                            {
+                                "name": "Visual Studio",
+                                "link": "https://visualstudio.microsoft.com/downloads/"
+                            },
+                            {
+                                "name": "Voxel Game V2",
+                                "link": "/club/download/year 2/terrain/V2.zip"
+                            }
+                        ]
+                    },
+
+                    "today": false
+                },
+                {
+                    "id": "terrain",
                     "title": "Voxel Terrain Generation",
                     "img": "./media/VoxelGame.png",
                     "about": "How do games like Minecraft generate terrain?  We talk about it this session!",
@@ -27,7 +48,7 @@
                         ]
                     },
 
-                    "today": true
+                    "today": false
                 }
             ]
         },
