@@ -23,7 +23,7 @@
                         ]
                     },
 
-                    "today": false
+                    "today": true
                 },
                 {
                     "id": "terrain",
